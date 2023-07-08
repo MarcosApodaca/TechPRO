@@ -151,14 +151,9 @@ header{
     flex-direction: column;
     align-items: center;
     margin-bottom: 2.5rem;
-    transition-property: transform ;
-    transition-duration: .3s;
 
 }
 
-.icono:hover{
-    transform: scale(1.1);
-}
 
 .icono img {
     width: 5rem;
@@ -167,7 +162,7 @@ header{
 .icono h3{
     color: #C07F00;
     text-transform: uppercase;
-    margin-top: 2.5 rem;
+    margin-top: 2.5rem;
 }
 
 /* Sobre Tech*/
@@ -317,4 +312,105 @@ header{
     font-size: 6rem;
 }
 
+/* Newsletter */        
 
+.newsletter{
+    background-image: linear-gradient(to bottom, transparent 50%, #fff 0%), url(../img/newsletter.jpg\ \(2\).jpg);
+    background-size: 100%, 70rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}   
+@media (min-width: 768px) {
+    .newsletter{
+        background-image: linear-gradient(to right, transparent 50%, #fff 0%), url(../img/newsletter.jpg\ \(2\).jpg);
+        background-position: center, 0px -2rem;
+        background-size: 100rem;
+        padding: 10rem 0;
+        margin-top: 5rem;
+    }
+}
+
+.contenido-newsletter{
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+    gap: 5rem;
+}       
+@media (min-width: 768px)  {
+    .contenido-newsletter{
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.texto-newsletter{
+   grid-row: 2/3;
+   
+}
+@media (min-width: 768px) {
+    .texto-newsletter{
+        grid-row: unset;
+        grid-column: 2/3;
+        margin-left: 7rem;
+    }
+}
+
+
+.formulario input[type="text"] {
+    width:100%;
+    padding: 0.5rem;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #C07F00;
+    padding: 1rem 6rem;
+    cursor: pointer;
+    font-weight: 900;
+    text-transform: uppercase;
+ }
+
+ .formulario input[type="submit"]:hover{
+    background-color: #3b3b3b;
+    transition: 0.4s;
+ }
+
+ /* Footer*/ 
+
+ footer{
+    margin-top: 4rem;
+    border-top: solid #e1e1e1 1px ;
+    display: flex;
+    justify-content: space-evenly;
+    
+ }
+
+ .footer ul li{
+    
+    list-style: none;
+    margin-top: 0.5rem;
+    text-align: left;
+   
+ }
+
+ .footer-lista h3{
+   text-align: center;
+ }
+
+ .footer-lista a{
+    text-decoration: none;
+    color: #757575;;
+    text-align: left;
+    
+ }
+
+ .derecho{
+    color: #C07F00;
+    text-align: center;
+    font-family: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 3rem 0;
+ }
